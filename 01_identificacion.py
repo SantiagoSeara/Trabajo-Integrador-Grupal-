@@ -1,4 +1,4 @@
-def parsear_idn(respuesta):
+def parsear_idn(respuesta): #Se define la función para procesar el "instrumento de medición"  a un comando estándar (cómo un *IDN?)
     respuesta = respuesta.strip()
     if respuesta.startswith("ERROR:"):
         return None
