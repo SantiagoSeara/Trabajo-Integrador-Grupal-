@@ -1,8 +1,13 @@
+import math
+
 def a_numero(texto):
     try:
-        return float(texto)
+        v = float(texto)
     except (ValueError, TypeError):
         return None
+    if math.isnan(v) or math.isinf(v):
+        return None
+    return v
 
 def con_unidad(valor, unidad):
     if valor == 0.0:
