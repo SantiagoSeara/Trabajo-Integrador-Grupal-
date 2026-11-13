@@ -46,4 +46,9 @@ if __name__ == '__main__':
     assert resultado["coincide"] is True
     assert coincide(None, 0.707) is False
     assert vrms_teorico(None) is None
+     cuadrada = [
+        {"canal": "CH1", "magnitud": "PKPK", "valor_convertido": 2.0},
+        {"canal": "CH1", "magnitud": "CYCRMS", "valor_convertido": 1.0},
+    ]
+    assert verificar_canal(cuadrada, "CH1")["coincide"] is False
     print("pruebas OK")
