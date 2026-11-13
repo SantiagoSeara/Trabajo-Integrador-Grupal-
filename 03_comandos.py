@@ -39,5 +39,3 @@ if __name__ == '__main__':
     assert validar(":CH1:SCALe 1 v") == "Una orden lleva un solo argumento"
     assert validar(":CH1:DISPlay ON?") == "Una consulta no lleva argumento"
     print("pruebas OK")
-
-print("pruebas OK")
