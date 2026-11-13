@@ -42,7 +42,7 @@ def leer_log(ruta):
             if medicion is None and motivo is None:
                 continue
             if motivo is not None:
-                rechazos.append({"linea": num, "motivo": motivo})
+                 rechazos.append({"linea": num, "motivo": motivo, "texto": linea.strip()})
             else:
                 clave = (medicion["equipo"], medicion["canal"], medicion["magnitud"])
                 if clave not in series:
