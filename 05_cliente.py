@@ -23,15 +23,15 @@ if __name__ == '__main__':
         parsear_idn = importlib.import_module("01_identificacion").parsear_idn
         osciloscopio = Instrumento()
         respuesta_cruda = osciloscopio.preguntar("*IDN?")
-        assert respuesta_cruda == "OWON, ADS3202,25470803, V1.2.0"
+        assert respuesta_cruda == "OWON,ADS3202,25470803,V1.2.0"
         
         datos_equipo = parsear_idn(respuesta_cruda)
         assert datos_equipo is not None
         assert datos_equipo["modelo"] == "ADS3202"
+        assert osciloscopio.preguntar(":NO:EXISTE?") == "ERROR: comando desconocido"
         
         osciloscopio.cerrar()
         print("pruebas OK")
     except ConnectionRefusedError:
+        
         print("Fallo de conexión: Prender instrumento_virtual.py")
-onRefusedError:
-        print("Fallo de conexión: Asegurate de correr 'python3 instrumento_virtual.py' en otra terminal antes de probar este archivo.")
