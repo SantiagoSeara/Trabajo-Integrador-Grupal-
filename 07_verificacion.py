@@ -1,4 +1,5 @@
 import math
+
 def vrms_teorico(vpp):
     if vpp is None or vpp < 0:
         return None
