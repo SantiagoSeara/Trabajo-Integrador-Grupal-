@@ -26,4 +26,3 @@ if __name__ == '__main__':
     for cmd in comandos:
         assert validar(cmd) is None, f"El comando {cmd} falló la validación"
     print("pruebas OK")
-print("pruebas OK")
