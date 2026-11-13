@@ -19,19 +19,27 @@ class Instrumento:
         self.conexion.close()
 
 if __name__ == '__main__':
+    parsear_idn = importlib.import_module("01_identificacion").parsear_idn
     try:
-        parsear_idn = importlib.import_module("01_identificacion").parsear_idn
         osciloscopio = Instrumento()
+    except ConnectionRefusedError:
+        print("Fallo de conexión: corré 'python3 instrumento_virtual.py' en otra terminal.")
+    else:
         respuesta_cruda = osciloscopio.preguntar("*IDN?")
-        assert respuesta_cruda == "OWON, ADS3202,25470803, V1.2.0"
-        
+        assert respuesta_cruda == "OWON,ADS3202,25470803,V1.2.0"
+
         datos_equipo = parsear_idn(respuesta_cruda)
         assert datos_equipo is not None
         assert datos_equipo["modelo"] == "ADS3202"
-        
+
+        osciloscopio.enviar(":CH2:DISPlay ON")
+        assert osciloscopio.preguntar(":CH2:DISPlay?") == "ON"
+
+        assert osciloscopio.preguntar(":NOEXISTE?") == "ERROR: comando desconocido"
+
         osciloscopio.cerrar()
+
+        multimetro = Instrumento(puerto=5556)
+        assert parsear_idn(multimetro.preguntar("*IDN?"))["modelo"] == "XDM1041"
+        multimetro.cerrar()
         print("pruebas OK")
-    except ConnectionRefusedError:
-        print("Fallo de conexión: Prender instrumento_virtual.py")
-onRefusedError:
-        print("Fallo de conexión: Asegurate de correr 'python3 instrumento_virtual.py' en otra terminal antes de probar este archivo.")
