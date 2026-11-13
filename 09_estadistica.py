@@ -36,7 +36,7 @@ if __name__ == '__main__':
     assert res_normal["minimo"] == 2.0
     assert res_normal["maximo"] == 9.0
     assert res_normal["promedio"] == 5.0625
-    assert abs(res_normal["desvio"] - 2.1118) < 0.0001 #El código está bien y la prueba está mal: el archivo termina con AssertionErro
+    assert abs(res_normal["desvio"] - 2.1118) < 0.0001
     
     assert fuera_de_rango([10, 15, 20], 10, 20) == []
     assert fuera_de_rango([5, 15, 25, 10], 10, 20) == [0, 2]
