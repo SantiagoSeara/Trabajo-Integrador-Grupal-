@@ -34,6 +34,10 @@ Así mismo, a través de iteraciones, se corrobora y se genera un nuevo registro
 | `instrumento_virtual.py`, `mediciones.log` | Provistos por la cátedra, sin modificar |
 | `bitacora-ia.md` | Bitácora de uso de IA |
 
+##Archivos de pruebas
+| `Mediciones_nuevas_2.log` |
+| `Mediciones_nuevas.log` |
+
 ## Cómo ejecutarlo
 
 Cada archivo corre solo y termina con `pruebas OK`:
