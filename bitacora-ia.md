@@ -1,6 +1,6 @@
 # Bitácora de IA - Trabajo Final Integrador
 
-| El prompt | Qué contestó | Qué cambiaste | Cómo lo verificaste | 
+| El prompt | Qué contestó | Qué cambiamos | Cómo lo verificamos | 
 | ----- | ----- | ----- | ----- | 
 | "Armar la lógica de parseo para el \*IDN? del primer ejercicio" | Código base con `split(',')` y `strip()`. | **COMPROBÉ** que el multímetro devuelve 5 campos. Limité los índices. **DIAGNÓSTICO**: Agregué un `if len(campos) < 4` para descartar mensajes de error. | Pruebas `assert` para la respuesta feliz de 4 y 5 campos, cadena vacía y errores. | 
 | "Avanzar con 02_magnitudes.py para los prefijos científicos" | Bucle `for` con tuplas de factores (1e3, 1e-3). | **PREDIGO**: El valor 999.9999 se rompería. Invertí el orden: primero apliqué `round(v, 3)` y luego verifiqué el rango. | Agregué la prueba trampa `assert con_unidad(999.9999, "Hz") == "1 kHz"`. | 
