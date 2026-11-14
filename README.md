@@ -62,3 +62,5 @@ python3 10_informe.py
 ```
 
 El instrumento se apaga con `Ctrl+C`.
+
+
