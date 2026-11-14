@@ -35,8 +35,8 @@ Así mismo, a través de iteraciones, se corrobora y se genera un nuevo registro
 | `bitacora-ia.md` | Bitácora de uso de IA |
 
 ## Archivos de pruebas
-| `Mediciones_nuevas_2.log` |
-| `Mediciones_nuevas.log` |
+| `Mediciones_nuevas_2.log` | Iteración para conservar nuevos resultados |
+| `Mediciones_nuevas.log` | Registro actual donde quedan grabadas las nuevas mediciones |
 
 ## Cómo ejecutarlo
 
