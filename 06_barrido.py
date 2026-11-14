@@ -42,3 +42,8 @@ if __name__ == '__main__':
     assert mediciones_rotas[0]["texto_crudo"] == "ERROR: comando desconocido"
     assert mediciones_rotas[0]["valor_convertido"] is None
     print("pruebas OK")
+    
+    mediciones_rotas = barrer(instrumento_mock, ["CH3"])
+    assert mediciones_rotas[0]["texto_crudo"] == "ERROR: comando desconocido"
+    assert mediciones_rotas[0]["valor_convertido"] is None
+    print("pruebas OK")
