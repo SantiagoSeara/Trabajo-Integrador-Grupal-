@@ -1,0 +1,156 @@
+Se generó un nuevo registro de mediciones, con el fin de corroborar el correcto funcionamiento del programa
+Mediciones generadas por el sistema de adquisición de datos ADS3202.
+Nuevo log para registro de nuestras mediciones.
+--- Ejecución: 2026-11-12 14:08:00 ---
+--- Ejecución: 2026-11-12 14:12:19 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:12:22 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:27 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:28 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:29 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:30 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:32 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:33 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:34 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:35 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:36 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:38 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:39 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:40 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:40 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:14:45 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:20:00 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:20:02 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
+--- Ejecución: 2026-11-12 14:20:03 ---
+ADS3202 CH1 FREQ (n=21): Promedio 999.258 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=20): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=20): Promedio 707.805 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=20): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=20): Promedio 799.803 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio nan V | Min 281.512 mV | Max 284.166 mV
+
