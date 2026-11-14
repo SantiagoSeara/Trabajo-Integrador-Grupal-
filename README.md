@@ -15,6 +15,7 @@ Profesor a cargo: Pablo E. Hernández · Profesora ayudante: Candela Fernández 
 ## Descripción
 
 Programa en Python (solo biblioteca estándar) que se conecta por TCP a un osciloscopio virtual ADS3202, le pide mediciones con comandos SCPI, verifica que el Vrms medido coincida con el teórico de una senoidal (tolerancia 2 %), lee el registro histórico `mediciones.log` descartando las líneas inválidas, calcula estadísticas y escribe un informe.
+Así mismo, a través de iteraciones, se corrobora y se genera un nuevo registro de mediciones, con el fin de corroborar y mantener un histórico de las nuevas mediciones. (El archivo Mediciones_nuevas_2.log es el primer archivo que se generó, pero el Mediciones_nuevas.log es el que funciona actualmente en caso de correr el código)
 
 ## Contenido del repositorio
 
