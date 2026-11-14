@@ -30,7 +30,7 @@ Así mismo, a través de iteraciones, se corrobora y se genera un nuevo registro
 | `09_estadistica.py` | Estadística de una serie |
 | `10_informe.py` | Informe final |
 | `instrumento_virtual.py`, `mediciones.log` | Provistos por la cátedra, sin modificar |
-| `mediciones_nuevas.log` | Historial acumulado de informes generados por el sistema |
+| `mediciones_nuevas.log` | Nuevo historial acumulado de informes generados por el sistema |
 | `bitacora-ia.md` | Bitácora de uso de IA |
 
 ## Archivos de pruebas
