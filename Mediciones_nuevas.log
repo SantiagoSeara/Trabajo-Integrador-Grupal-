@@ -1,0 +1,170 @@
+Mediciones generadas por el sistema de adquisición de datos ADS3202.
+Nuevo log para registro de nuestras mediciones.
+--- Ejecución: 2026-11-14 11:52:26 ---
+=== INFORME DE MEDICIONES ===
+Instrumento: OWON ADS3202 (Serie: 25470803 | Firmware: V1.2.0)
+
+--- MEDICIONES DEL BARRIDO ACTUAL ---
+CH1 FREQ: 995.546 Hz
+CH1 PKPK: 2.01 V
+CH1 CYCRMS: 710.414 mV
+CH2 FREQ: 2.494 kHz
+CH2 PKPK: 797.788 mV
+CH2 CYCRMS: 282.945 mV
+
+--- SERIES HISTÓRICAS ---
+ADS3202 CH1 FREQ (n=22): Promedio 999.09 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=21): Promedio 2.002 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=21): Promedio 707.929 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=21): Promedio 2.498 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=21): Promedio 799.707 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio 282.96 mV | Min 281.512 mV | Max 284.166 mV
+
+--- VERIFICACIÓN DEL BARRIDO ACTUAL ---
+CH1: PASA (Medido: 0.7104 V | Teórico: 0.7106 V)
+CH2: PASA (Medido: 0.2829 V | Teórico: 0.2821 V)
+
+--- Ejecución: 2026-11-14 11:53:38 ---
+=== INFORME DE MEDICIONES ===
+Instrumento: OWON ADS3202 (Serie: 25470803 | Firmware: V1.2.0)
+
+--- MEDICIONES DEL BARRIDO ACTUAL ---
+CH1 FREQ: 999.376 Hz
+CH1 PKPK: 2.006 V
+CH1 CYCRMS: 709.082 mV
+CH2 FREQ: 2.492 kHz
+CH2 PKPK: 796.107 mV
+CH2 CYCRMS: 283.779 mV
+
+--- SERIES HISTÓRICAS ---
+ADS3202 CH1 FREQ (n=22): Promedio 999.264 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=21): Promedio 2.002 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=21): Promedio 707.866 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=21): Promedio 2.498 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=21): Promedio 799.627 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio 282.999 mV | Min 281.512 mV | Max 284.166 mV
+
+--- VERIFICACIÓN DEL BARRIDO ACTUAL ---
+CH1: PASA (Medido: 0.7091 V | Teórico: 0.7092 V)
+CH2: PASA (Medido: 0.2838 V | Teórico: 0.2815 V)
+
+--- Ejecución: 2026-11-14 11:55:03 ---
+=== INFORME DE MEDICIONES ===
+Instrumento: OWON ADS3202 (Serie: 25470803 | Firmware: V1.2.0)
+
+--- MEDICIONES DEL BARRIDO ACTUAL ---
+CH1 FREQ: 1.001 kHz
+CH1 PKPK: 2.004 V
+CH1 CYCRMS: 707.202 mV
+CH2 FREQ: 2.508 kHz
+CH2 PKPK: 802.793 mV
+CH2 CYCRMS: 282.987 mV
+
+--- SERIES HISTÓRICAS ---
+ADS3202 CH1 FREQ (n=22): Promedio 999.358 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=21): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=21): Promedio 707.776 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=21): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=21): Promedio 799.945 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio 282.962 mV | Min 281.512 mV | Max 284.166 mV
+
+--- VERIFICACIÓN DEL BARRIDO ACTUAL ---
+CH1: PASA (Medido: 0.7072 V | Teórico: 0.7085 V)
+CH2: PASA (Medido: 0.283 V | Teórico: 0.2838 V)
+
+--- Ejecución: 2026-11-14 11:55:05 ---
+=== INFORME DE MEDICIONES ===
+Instrumento: OWON ADS3202 (Serie: 25470803 | Firmware: V1.2.0)
+
+--- MEDICIONES DEL BARRIDO ACTUAL ---
+CH1 FREQ: 995.546 Hz
+CH1 PKPK: 2.01 V
+CH1 CYCRMS: 710.414 mV
+CH2 FREQ: 2.494 kHz
+CH2 PKPK: 797.788 mV
+CH2 CYCRMS: 282.945 mV
+
+--- SERIES HISTÓRICAS ---
+ADS3202 CH1 FREQ (n=22): Promedio 999.09 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=21): Promedio 2.002 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=21): Promedio 707.929 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=21): Promedio 2.498 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=21): Promedio 799.707 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio 282.96 mV | Min 281.512 mV | Max 284.166 mV
+
+--- VERIFICACIÓN DEL BARRIDO ACTUAL ---
+CH1: PASA (Medido: 0.7104 V | Teórico: 0.7106 V)
+CH2: PASA (Medido: 0.2829 V | Teórico: 0.2821 V)
+
+--- Ejecución: 2026-11-14 11:55:06 ---
+=== INFORME DE MEDICIONES ===
+Instrumento: OWON ADS3202 (Serie: 25470803 | Firmware: V1.2.0)
+
+--- MEDICIONES DEL BARRIDO ACTUAL ---
+CH1 FREQ: 1.005 kHz
+CH1 PKPK: 2.009 V
+CH1 CYCRMS: 703.693 mV
+CH2 FREQ: 2.496 kHz
+CH2 PKPK: 801.02 mV
+CH2 CYCRMS: 284.166 mV
+
+--- SERIES HISTÓRICAS ---
+ADS3202 CH1 FREQ (n=22): Promedio 1 kHz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=21): Promedio 2.002 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=21): Promedio 707.609 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=21): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=21): Promedio 799.861 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio 283.018 mV | Min 281.512 mV | Max 284.166 mV
+
+--- VERIFICACIÓN DEL BARRIDO ACTUAL ---
+CH1: PASA (Medido: 0.7037 V | Teórico: 0.7104 V)
+CH2: PASA (Medido: 0.2842 V | Teórico: 0.2832 V)
+
+--- Ejecución: 2026-11-14 11:55:13 ---
+=== INFORME DE MEDICIONES ===
+Instrumento: OWON ADS3202 (Serie: 25470803 | Firmware: V1.2.0)
+
+--- MEDICIONES DEL BARRIDO ACTUAL ---
+CH1 FREQ: 1.001 kHz
+CH1 PKPK: 2 V
+CH1 CYCRMS: 708.292 mV
+CH2 FREQ: 2.496 kHz
+CH2 PKPK: 801.957 mV
+CH2 CYCRMS: 284.165 mV
+
+--- SERIES HISTÓRICAS ---
+ADS3202 CH1 FREQ (n=22): Promedio 999.336 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=21): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=21): Promedio 707.828 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=21): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=21): Promedio 799.905 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio 283.018 mV | Min 281.512 mV | Max 284.166 mV
+
+--- VERIFICACIÓN DEL BARRIDO ACTUAL ---
+CH1: PASA (Medido: 0.7083 V | Teórico: 0.7072 V)
+CH2: PASA (Medido: 0.2842 V | Teórico: 0.2835 V)
+
+--- Ejecución: 2026-11-14 11:55:16 ---
+=== INFORME DE MEDICIONES ===
+Instrumento: OWON ADS3202 (Serie: 25470803 | Firmware: V1.2.0)
+
+--- MEDICIONES DEL BARRIDO ACTUAL ---
+CH1 FREQ: 996.619 Hz
+CH1 PKPK: 2.003 V
+CH1 CYCRMS: 707.36 mV
+CH2 FREQ: 2.499 kHz
+CH2 PKPK: 798.524 mV
+CH2 CYCRMS: 281.734 mV
+
+--- SERIES HISTÓRICAS ---
+ADS3202 CH1 FREQ (n=22): Promedio 999.138 Hz | Min 995.546 Hz | Max 1.005 kHz
+ADS3202 CH1 PKPK (n=21): Promedio 2.001 V | Min 1.99 V | Max 2.01 V
+ADS3202 CH1 CYCRMS (n=21): Promedio 707.784 mV | Min 703.599 mV | Max 710.414 mV
+ADS3202 CH2 FREQ (n=21): Promedio 2.499 kHz | Min 2.491 kHz | Max 2.508 kHz
+ADS3202 CH2 PKPK (n=21): Promedio 799.742 mV | Min 796.107 mV | Max 803.44 mV
+ADS3202 CH2 CYCRMS (n=21): Promedio 282.902 mV | Min 281.512 mV | Max 284.166 mV
+
+--- VERIFICACIÓN DEL BARRIDO ACTUAL ---
+CH1: PASA (Medido: 0.7074 V | Teórico: 0.708 V)
+CH2: PASA (Medido: 0.2817 V | Teórico: 0.2823 V)
+
