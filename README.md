@@ -8,7 +8,7 @@ Profesor a cargo: Pablo E. Hernández · Profesora ayudante: Candela Fernández 
 
 - Jorge Santiago Tolaba
 - Santiago Agustín Seara
-- 
+- Arnaldo Paul Duran
 
 ## Descripción
 
