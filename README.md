@@ -10,7 +10,7 @@ Profesor a cargo: Pablo E. Hernández · Profesora ayudante: Candela Fernández 
 - Santiago Agustín Seara
 - Arnaldo Paul Duran
 - Luca Sardanelli
-- 
+- Enrique Franco Dominguez
 
 ## Descripción
 
