@@ -20,7 +20,7 @@ Así mismo, a través de iteraciones, se corrobora y se genera un nuevo registro
 ## Contenido del repositorio
 
 | Archivo | Ejercicio |
-|---|---|
+| :--- | :--- |
 | `01_identificacion.py` | Parseo de `*IDN?` |
 | `02_magnitudes.py` | Conversión de números y prefijos (kHz, mV…) |
 | `03_comandos.py` | Órdenes y consultas SCPI |
