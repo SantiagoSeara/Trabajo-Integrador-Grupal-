@@ -40,4 +40,3 @@ if __name__ == '__main__':
     assert con_unidad(0.0005, "s") == "500 us"
     assert con_unidad(999.9999, "Hz") == "1 kHz"
     print("pruebas OK")
- OK")
