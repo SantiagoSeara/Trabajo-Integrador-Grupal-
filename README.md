@@ -6,11 +6,9 @@ Profesor a cargo: Pablo E. Hernández · Profesora ayudante: Candela Fernández 
 
 ## Integrantes
 
-. Jorge Santiago Tolaba
-. Santiago Agustín Seara
-. 
-. 
-. 
+- Jorge Santiago Tolaba
+- Santiago Agustín Seara
+- 
 
 ## Descripción
 
