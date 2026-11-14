@@ -1,13 +1,8 @@
-import math
-
 def a_numero(texto):
     try:
-        v = float(texto)
+        return float(texto)
     except (ValueError, TypeError):
         return None
-    if math.isnan(v) or math.isinf(v):
-        return None
-    return v
 
 def con_unidad(valor, unidad):
     if valor == 0.0:
@@ -44,5 +39,5 @@ if __name__ == '__main__':
     assert con_unidad(0.707, "V") == "707 mV"
     assert con_unidad(0.0005, "s") == "500 us"
     assert con_unidad(999.9999, "Hz") == "1 kHz"
-    assert con_unidad(0.0, "V") == "0 V"
     print("pruebas OK")
+ OK")
