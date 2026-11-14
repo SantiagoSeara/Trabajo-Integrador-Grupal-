@@ -1,62 +1,102 @@
-"""Ejercicio 10: arma el informe del banco de mediciones."""
+import datetime
 import importlib
+import math
 
-"""Módulo de generación del informe de mediciones.
-
-Este archivo reúne la identificación del instrumento, los valores históricos
-medidos y la verificación del barrido actual para producir un texto legible
-que puede mostrarse por consola o guardarse en archivo.
-"""
+"""Módulo de generación del informe de mediciones."""
 
 
-def armar_informe(idn, series, verificaciones):
-    """Construye un resumen textual a partir de los datos del instrumento.
+def _es_numero_valido(valor):
+    """Devuelve True si valor es un número real finito (ni None ni NaN)."""
+    if valor is None:
+        return False
+    try:
+        v = float(valor)
+        return not math.isnan(v) and not math.isinf(v)
+    except (ValueError, TypeError):
+        return False
 
-    Acotación:
-    La función centraliza la presentación: no decide cómo medir, sino cómo
-    comunicar los resultados para que el usuario pueda interpretarlos fácilmente.
-    """
+
+def _integrar_barrido_a_series(series_hist, idn_datos, mediciones_actuales):
+    """Agrega la lista de 6 diccionarios de 06_barrido.py a series_hist."""
+    equipo = idn_datos["modelo"] if idn_datos and "modelo" in idn_datos else "ADS3202"
+
+    for item in mediciones_actuales:
+        valor = item.get("valor_convertido")
+        if _es_numero_valido(valor):
+            clave = (equipo, item["canal"], item["magnitud"])
+            series_hist.setdefault(clave, []).append(float(valor))
+
+
+def armar_informe(idn, series, verificaciones, mediciones_actuales=None, rechazos=None):
+    """Construye un resumen textual a partir de los datos del instrumento."""
     con_unidad = importlib.import_module("02_magnitudes").con_unidad
     resumen = importlib.import_module("09_estadistica").resumen
 
     lineas = []
     lineas.append("=== INFORME DE MEDICIONES ===")
     if idn:
-        lineas.append(f"Instrumento: {idn['fabricante']} {idn['modelo']} (Serie: {idn['serie']} - v{idn['version']})")
+        lineas.append(
+            f"Instrumento: {idn['fabricante']} {idn['modelo']} "
+            f"(Serie: {idn['serie']} | Firmware: {idn['version']})"
+        )
     else:
         lineas.append("Instrumento: Desconocido")
 
-    # Sección 1: resumen de la historia registrada. Aquí se muestran las
-    # series con sus estadísticos básicos, útiles para comparar tendencias y
-    # detectar anomalías de forma rápida.
-    lineas.append("\n--- SERIES HISTÓRICAS ---")
-    for clave, valores in series.items():
-        equipo, canal, magnitud = clave
-        datos = resumen(valores)
-        if datos:
-            unidad = "Hz" if magnitud == "FREQ" else "V"
-            prom_str = con_unidad(datos['promedio'], unidad)
-            min_str = con_unidad(datos['minimo'], unidad)
-            max_str = con_unidad(datos['maximo'], unidad)
-            lineas.append(f"{equipo} {canal} {magnitud} (n={datos['n']}): Promedio {prom_str} | Min {min_str} | Max {max_str}")
+    # Sección 1: detalle de las 6 mediciones del barrido actual
+    if mediciones_actuales:
+        lineas.append("\n--- MEDICIONES DEL BARRIDO ACTUAL ---")
+        for item in mediciones_actuales:
+            canal = item["canal"]
+            magnitud = item["magnitud"]
+            unidad = item["unidad"]
+            valor = item["valor_convertido"]
+            if _es_numero_valido(valor):
+                lineas.append(f"{canal} {magnitud}: {con_unidad(valor, unidad)}")
+            else:
+                lineas.append(f"{canal} {magnitud}: ERROR ({item['texto_crudo']})")
 
-    # Sección 2: comparación entre la medición actual y el valor teórico.
-    # Esto permite validar si el canal está dentro de la tolerancia esperada.
+    # Sección 2: resumen de la historia registrada (sin NaN)
+    lineas.append("\n--- SERIES HISTÓRICAS ---")
+    if not series:
+        lineas.append("Sin series históricas registradas.")
+    else:
+        for clave, valores in series.items():
+            equipo, canal, magnitud = clave
+            valores_limpios = [float(v) for v in valores if _es_numero_valido(v)]
+            datos = resumen(valores_limpios)
+            if datos:
+                unidad = "Hz" if magnitud == "FREQ" else "V"
+                prom_str = con_unidad(datos['promedio'], unidad)
+                min_str = con_unidad(datos['minimo'], unidad)
+                max_str = con_unidad(datos['maximo'], unidad)
+                lineas.append(
+                    f"{equipo} {canal} {magnitud} (n={datos['n']}): "
+                    f"Promedio {prom_str} | Min {min_str} | Max {max_str}"
+                )
+
+    # Sección 3: comparación entre la medición actual y el valor teórico
     lineas.append("\n--- VERIFICACIÓN DEL BARRIDO ACTUAL ---")
     for verif in verificaciones:
         canal = verif["canal"]
         estado = "PASA" if verif["coincide"] else "FALLA"
         if verif['vrms_medido'] is not None and verif['vrms_teorico'] is not None:
-            lineas.append(f"{canal}: {estado} (Medido: {round(verif['vrms_medido'], 4)} V | Teórico: {round(verif['vrms_teorico'], 4)} V)")
+            lineas.append(
+                f"{canal}: {estado} (Medido: {round(verif['vrms_medido'], 4)} V | "
+                f"Teórico: {round(verif['vrms_teorico'], 4)} V)"
+            )
         else:
             lineas.append(f"{canal}: FALLA (Faltan datos para verificar)")
+
+    # Sección 4: líneas descartadas/corruptas del log (solo si se pasan)
+    if rechazos:
+        lineas.append(f"\n--- REGISTROS RECHAZADOS DEL LOG ({len(rechazos)}) ---")
+        for r in rechazos:
+            lineas.append(f"  - {r}")
 
     return "\n".join(lineas)
 
 
 if __name__ == '__main__':
-    # Bloque de validación rápida: sirve para comprobar que el formato del
-    # informe sea consistente antes de intentar usarlo con equipo real.
     idn_test = {"fabricante": "OWON", "modelo": "ADS3202", "serie": "123", "version": "V1.0"}
     series_test = {("ADS3202", "CH1", "FREQ"): [1000.0, 1005.0]}
     verif_test = [{"canal": "CH1", "vrms_medido": 0.71, "vrms_teorico": 0.707, "coincide": True}]
@@ -67,8 +107,6 @@ if __name__ == '__main__':
     print("pruebas OK")
 
     try:
-        # Acotación: este bloque se ejecuta solo cuando el instrumento está
-        # disponible y puede responder a una consulta de identificación.
         Instrumento = importlib.import_module("05_cliente").Instrumento
         parsear_idn = importlib.import_module("01_identificacion").parsear_idn
         barrer = importlib.import_module("06_barrido").barrer
@@ -79,8 +117,6 @@ if __name__ == '__main__':
         respuesta_idn = osciloscopio.preguntar("*IDN?")
         idn_datos = parsear_idn(respuesta_idn)
 
-        # Se realiza el barrido de los canales para obtener los valores actuales
-        # que luego serán comparados con la referencia teórica o histórica.
         mediciones_actuales = barrer(osciloscopio, ["CH1", "CH2"])
         osciloscopio.cerrar()
 
@@ -89,46 +125,38 @@ if __name__ == '__main__':
             verificar_canal(mediciones_actuales, "CH2")
         ]
 
-        # Se lee el archivo de log histórico para incorporar las series previas
-        # dentro del mismo informe generado para el usuario.
         series_hist, rechazos = leer_log("mediciones.log")
-        informe_final = armar_informe(idn_datos, series_hist, verificaciones_actuales)
+        _integrar_barrido_a_series(series_hist, idn_datos, mediciones_actuales)
 
-        # En la práctica, esta línea se repite para dejar evidencia del mismo
-        # proceso de lectura, pero el informe final se construye a partir de la
-        # versión cargada en memoria más reciente.
-        # series_hist, rechazos = leer_log("mediciones.log")
-        # informe_final = armar_informe(idn_datos, series_hist, verificaciones_actuales)
+        # Informe para guardar en mediciones_nuevas.log (sin rechazos)
+        informe_log = armar_informe(
+            idn_datos,
+            series_hist,
+            verificaciones_actuales,
+            mediciones_actuales=mediciones_actuales,
+            rechazos=None
+        )
 
-        # Guarda una copia resumida del comportamiento histórico en un archivo
-        # auxiliar para su revisión posterior.
-        import datetime
+        # Informe para mostrar por consola (con rechazos)
+        informe_consola = armar_informe(
+            idn_datos,
+            series_hist,
+            verificaciones_actuales,
+            mediciones_actuales=mediciones_actuales,
+            rechazos=rechazos
+        )
+
         ahora = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-        con_unidad = importlib.import_module("02_magnitudes").con_unidad
-        resumen = importlib.import_module("09_estadistica").resumen
-
         with open("mediciones_nuevas.log", "a", encoding="utf-8") as log_nuevo:
             log_nuevo.write(f"--- Ejecución: {ahora} ---\n")
+            log_nuevo.write(informe_log + "\n\n")
 
-            for clave, valores in series_hist.items():
-                equipo, canal, magnitud = clave
-                datos = resumen(valores)
-                if datos:
-                    unidad = "Hz" if magnitud == "FREQ" else "V"
-                    prom = con_unidad(datos['promedio'], unidad)
-                    minimo = con_unidad(datos['minimo'], unidad)
-                    maximo = con_unidad(datos['maximo'], unidad)
-
-                    linea = f"{equipo} {canal} {magnitud} (n={datos['n']}): Promedio {prom} | Min {minimo} | Max {maximo}\n"
-                    log_nuevo.write(linea)
-            log_nuevo.write("\n")
-
-        # Muestra el texto final por consola para que el usuario vea el resultado
-        # del análisis completo en forma legible.
-        print("\n" + informe_final)
+        print("\n" + informe_consola)
 
     except ConnectionRefusedError:
+        print("Para ver el informe final, ejecutar instrumento_virtual.py en otra terminal.")
+    except FileNotFoundError:
+        print("No se encontró mediciones.log. Asegurate de tenerlo en la misma carpeta.")
         print("Para ver el informe final, ejecutar instrumento_virtual.py en otra terminal.")
     except FileNotFoundError:
         print("No se encontró mediciones.log. Asegurate de tenerlo en la misma carpeta.")
